@@ -2,6 +2,12 @@
 
 A web application that will allow users to showcase their projects and get them votes by their peers.
 
+---------------------------
+## Authors
+
+Tony Kihara
+
+
 ----------------------------------------
 ## Setup/Installation Requirements
 
