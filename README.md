@@ -1,9 +1,9 @@
-# Tony AWARD
+# Tony AWARD :+1: :+1:
 
 A web application that will allow users to showcase their projects and get them votes by their peers.
 
 ---------------------------
-## Authors
+## Authors :feelsgood:
 
 Tony Kihara
 
@@ -11,23 +11,27 @@ Tony Kihara
 ----------------------------------------
 ## Setup/Installation Requirements
 
-Github link 
-live link 
+*Github link 
+*live link 
 
 ---------------------------------------
 ### Installing Dependencies
 
+~~~
 pip3 install -r requirements.txt
+~~~
 
 --------------------------------------
 ### Creating virtual environment
-
+~~~
 python3.6 -m venv virtual
+~~~
 
 -------------------------------------
 ### Running the server
-
+~~~
 python3.6 manage.py runserver
+~~~
 
 ----------------------------------
 ## User Stories
@@ -49,17 +53,18 @@ python3.6 manage.py runserver
 
 ------------------------------------
 ## Technologies Used
-
-Python3.6
-Django
-HTML
-CSS
-Bootstrap
-
+~~~
+*Python3.6
+*Django
+*HTML
+*CSS
+*Bootstrap
+~~~
 ----------------------------------------------------------------------
 ## Support and contact details
-
+~~~
  Run the web page once again incase of any errors, suggestions send an email: tonykiharatonkin6@gmail.com 
+~~~
 
 -------------------------------------------------------
 ## License
