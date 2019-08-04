@@ -1,0 +1,50 @@
+{% extends 'base.html'%}
+{% load bootstrap3%}
+{% block content%}
+<div class="con">
+  <div class="works" style="text-align: center;font-size: 1.6em;">
+      <h2 style="padding-bottom: 20px;font-family: 'Anton', sans-serif;">How</span> it works</h2>
+      <div class="row col-md-12" >
+        <div class="col-md-4">
+          <h3 style="font-family: 'Lobster', cursive;color:greenyellow;">DESIGN</h3>
+        </div>
+  
+        <div class="col-md-4">
+          <h3 style="font-family: 'Lobster', cursive;color:greenyellow;">USABILITY</h3>
+        </div>
+  
+        <div class="col-md-4">
+          <h3 style="font-family: 'Lobster', cursive;color:greenyellow;">CONTENT</h3>
+        </div>
+      </div>
+      <div class="row col-md-12">
+        <p class="col-md-4" style="font-family: 'Merienda', cursive;">
+          We check the uniqueness of the design,The caption that it attracts and the charisma that it arouses.
+        </p>
+  
+        <p class="col-md-4" style="font-family: 'Merienda', cursive;">
+          We check the simplicity of been used,the friendliness to the user and the sense of intaractivity</p>
+  
+        <p class="col-md-4" style="font-family: 'Merienda', cursive;">
+        Content its all about what the app is about,the problem it solves and the repulsion it antagonises.
+        </p>
+      </div>
+  </div>
+  <br>
+    <div class="do" style="text-align: center;font-size: 1.7em;padding-top: 30px;">
+        <h2 style="padding-bottom: 20px;font-family: 'Anton', sans-serif;"><span >What</span> we do</h2>
+            <h3 style="font-family: 'Lobster', cursive;color:greenyellow;">Awarding the best and unforgettable apps and websites</h3>
+            <p style="font-family: 'Merienda', cursive;">This is done following the creteria of the three core most guidance.The design of the app must be catchy.The usability of the app must be easy to use and the content of the app must be relevant to the users.</p>
+            <!-- <img src="https://images.unsplash.com/photo-1552624189-2f10d9bda06f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" style="height:400px; width:500px"> -->
+    </div>
+      
+    <div class="gallery">
+            <h2 style="text-align:center ;font-family: 'Anton', sans-serif;">Projects <span >by</span> others</h2>
+            {% for image in images%}
+            <div class="col-md-4">
+            <img class="img-fluid" src="{{ post.photo.cdn_url }}-/crop/600x600/center/-/quality/lightest/" alt=""></div>
+            {% endfor %}
+          </div>
+  </div>
+  
+  {% endblock %}
