@@ -1,0 +1,28 @@
+{%extends "base.html"%}
+{% load bootstrap3 %}
+{% block content%}
+<body>
+  <div class="container">
+    <div id="wrapper" >
+      <div class="main-content" style="background-color:rgba(0, 0, 0, .3);">
+        <div class="header" >
+          <h1 style="text-align:center;"> Login</h1>
+        <div class="l-part">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-sm" value="Login">
+                  </div>
+                  <input type="hidden" name="next" value="{{next}}">
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="sub-content" style="background-color:rgba(0, 0, 0, .3);">
+      <div class="s-part">
+        Don't have an account?<a href="signup/">Sign up</a>
+      </div>
+    </div>
+</body>
+{% endblock %}
